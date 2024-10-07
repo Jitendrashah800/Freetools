@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online PDF Editor</h1>
+    </header>
+
+    <section class="upload-section">
+        <h2>Edit Your PDF</h2>
+        <p>Upload your PDF file and start editing:</p>
+        <input type="file" id="fileUpload" accept="application/pdf">
+        <button id="uploadBtn">Upload PDF</button>
+    </section>
+
+    <section class="editor-section" id="editor">
+        <!-- Placeholder for where PDF will be displayed and edited -->
+        <canvas id="pdfCanvas"></canvas>
+    </section>
+
+    <section class="toolbar">
+        <button id="addText">Add Text</button>
+        <button id="drawShape">Draw Shape</button>
+        <button id="savePDF">Save & Download PDF</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
